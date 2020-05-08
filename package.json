@@ -3,6 +3,11 @@
 	"displayName": "Multiple Entry",
 	"description": "Iterate over cursors and enter text.",
 	"version": "0.0.1",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/samcarswell/multiple-entry.git"
+	},
 	"engines": {
 		"vscode": "^1.45.0"
 	},
@@ -17,7 +22,7 @@
 		"commands": [
 			{
 				"command": "multiple-entry.enterValues",
-				"title": "Enter Values"
+				"title": "Multiple Entry: Enter Values"
 			}
 		]
 	},
