@@ -13,9 +13,13 @@ export function activate(context: vscode.ExtensionContext) {
 		for (let i = 0; i < textEditor.selections.length; i++) {
 			const value = await vscode.window.showInputBox(
 				{
-					prompt: `Enter value for ${ordinal(i + 1)} selection`
+					prompt: `Enter value for ${ordinal(i + 1)} cursor`
 				}
 			);
+
+			if (value === undefined) {
+				break;
+			}
 
 			if (value) {
 				textEditor.edit((editBuilder) => {
@@ -23,8 +27,6 @@ export function activate(context: vscode.ExtensionContext) {
 				});
 			}
 		}
-
-		vscode.window.showInformationMessage(JSON.stringify(textEditor.selections));
 	});
 
 	context.subscriptions.push(disposable);
