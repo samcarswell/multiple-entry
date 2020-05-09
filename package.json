@@ -2,7 +2,8 @@
 	"name": "multiple-entry",
 	"displayName": "Multiple Entry",
 	"description": "Iterate over cursors and enter text.",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "samcarswell",
 	"icon": "images/icon.png",
 	"repository": {
 		"type": "git",
